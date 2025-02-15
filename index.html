@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full bg-gray-800 shadow-md p-4 flex justify-between items-center">
+        <a href="#home" class="text-red-500 text-xl font-bold flex items-center">
+            🎬 Movies
+        </a>
+        <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="hover:text-red-400">Home</a>
+            <a href="#movies" class="hover:text-red-400">Movies</a>
+            <a href="#coming-soon" class="hover:text-red-400">Coming Soon</a>
+            <a href="#newsletter" class="hover:text-red-400">Newsletter</a>
+        </nav>
+        <a href="#" class="bg-red-500 px-4 py-2 rounded hover:bg-red-600">Sign In</a>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('img/home3.jpg');">
+        <div class="text-center">
+            <h2 class="text-4xl md:text-6xl font-bold">Spider-Man <br> Far From Home</h2>
+            <a href="#" class="mt-4 inline-block bg-red-500 px-6 py-3 rounded text-lg hover:bg-red-600">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section id="movies" class="py-12 px-4">
+        <h2 class="text-3xl font-bold text-center border-b-4 border-red-500 inline-block mb-6">Opening This Week</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <!-- Movie Cards -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="img/m1.jpg" alt="Venom" class="rounded hover:scale-105 transition-transform">
+                <h3 class="mt-2 text-xl font-semibold">Venom</h3>
+                <span class="text-sm text-gray-400">120min | Action</span>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="img/m2.jpg" alt="Dunkirk" class="rounded hover:scale-105 transition-transform">
+                <h3 class="mt-2 text-xl font-semibold">Dunkirk</h3>
+                <span class="text-sm text-gray-400">105min | Adventure</span>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="img/m3.jpg" alt="Batman & Superman" class="rounded hover:scale-105 transition-transform">
+                <h3 class="mt-2 text-xl font-semibold">Batman & Superman</h3>
+                <span class="text-sm text-gray-400">100min | Thriller</span>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="img/m4.jpg" alt="John Wick" class="rounded hover:scale-105 transition-transform">
+                <h3 class="mt-2 text-xl font-semibold">John Wick</h3>
+                <span class="text-sm text-gray-400">120min | Adventure</span>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="img/m5.jpg" alt="Aquaman" class="rounded hover:scale-105 transition-transform">
+                <h3 class="mt-2 text-xl font-semibold">Aquaman</h3>
+                <span class="text-sm text-gray-400">130min | Action</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon -->
+    <section id="coming-soon" class="py-12 px-4">
+        <h2 class="text-3xl font-bold text-center border-b-4 border-red-500 inline-block mb-6">Coming Soon</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="img/coming1.jpg" alt="Johnny English" class="rounded hover:scale-105 transition-transform">
+                <h3 class="mt-2 text-xl font-semibold">Johnny English</h3>
+                <span class="text-sm text-gray-400">80min | Comedy</span>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="img/coming2.jpg" alt="WarCraft" class="rounded hover:scale-105 transition-transform">
+                <h3 class="mt-2 text-xl font-semibold">WarCraft</h3>
+                <span class="text-sm text-gray-400">120min | Action</span>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="img/coming3.jpg" alt="Rampage" class="rounded hover:scale-105 transition-transform">
+                <h3 class="mt-2 text-xl font-semibold">Rampage</h3>
+                <span class="text-sm text-gray-400">108min | Adventure</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="py-12 text-center">
+        <h2 class="text-3xl font-bold">Subscribe To Get <br> Newsletter</h2>
+        <form class="mt-4 flex justify-center">
+            <input type="email" placeholder="Enter Email..." class="p-2 rounded-l bg-gray-700 text-white">
+            <input type="submit" value="Subscribe" class="p-2 bg-red-500 rounded-r hover:bg-red-600 cursor-pointer">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-center">
+        <a href="index.html" class="text-xl font-bold text-red-500">🎬 Movies</a>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="#" class="hover:text-red-500">Facebook</a>
+            <a href="#" class="hover:text-red-500">Instagram</a>
+            <a href="#" class="hover:text-red-500">Twitter</a>
+            <a href="#" class="hover:text-red-500">TikTok</a>
+        </div>
+        <p class="text-sm text-gray-400 mt-2">© 2025 Web Masters. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
